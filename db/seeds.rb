@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning database..."
+Vote.destroy_all
+
+puts "Creating addresses..."
+home = { address: "2022 Madison Avenue, 10035, New York, NY, USA", zipcode: "10030" }
+lycée_français = { address: "1st 75th E street, 10035, New York, NY, USA", zipcode: "10027"}
+hospital = { address: "12th wall street , 10035, New York, NY, USA", zipcode: "10024"}
+
+[ home, lycée_français, hospital ].each do |attributes|
+  vote = Vote.create!(attributes)
+  puts "Created #{vote.address}"
+end
+puts "Finished!"

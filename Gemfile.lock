@@ -65,6 +65,7 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.5)
+    geocoder (1.7.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -176,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  geocoder
   jbuilder (~> 2.7)
   listen (~> 3.2)
   puma (~> 4.1)
