@@ -2,11 +2,11 @@
         <% if params[:query].present? %>
           <% if @votes.present? %>
             <% @votes.each do |vote| %>
-          <h6>Here is where you shoud go to vote</h6>
+          <h6>Quelle chance, tu dois aller voter ici :</h6>
               <h3><%= vote.address %></h3>
             <% end %>
               <% else %>
-                <h3> Sorry my friend, your zipcode doesn't match try again </h3>
+                <h6> Oups ! Ton zipcode ne correspond à aucun lieu de vote... Es-tu sûr de toi ? </h6>
           <% end %>
         <% end %>
     </div>

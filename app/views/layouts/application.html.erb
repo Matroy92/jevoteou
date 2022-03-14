@@ -8,12 +8,17 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <div class="background"></div>
+  <body>
   <%=render 'votes/navbar' %>
-    <h4>Where am I supposed to vote ?</h4>
+  <div class="result">
+    <p>C'est bien beau tout ça mais je vote où ?</p>
     <div class="center-search">
         <%= form_tag votes_path, method: :get do %>
-          <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "Tap your zipcode here !" %>
+          <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "C'est quoi mon zipcode ?" %>
         <% end %>
     </div>
     <%= yield %>
+    </div>
+  </body>
 </html>
