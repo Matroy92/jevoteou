@@ -1,16 +1,16 @@
-address;zipcode
-Lycée Français de New York; 10025
-Lycée Français de New York; 10024
-Lycée Français de New York; 10023
-Lycée Français de New York; 10022
-Lycée Français de New York; 10021
-Lycée Français de New York; 10020
-Harlem Rehab; 10019
-Harlem Rehab; 10018
-Harlem Rehab; 10017
-Harlem Rehab; 10016
-Harlem Rehab; 10015
-Harlem Rehab; 10014
-Harlem Rehab; 10013
-Harlem Rehab; 10012
-Harlem Rehab; 10011
+address;zipcode;latitude;longitude
+Lycée Français de New York;10025;40.768825;-73.951379
+Lycée Français de New York;10024;40.768825;-73.951379
+Lycée Français de New York;10023;40.768825;-73.951379
+Lycée Français de New York;10022;40.768825;-73.951379
+Lycée Français de New York;10021;40.768825;-73.951379
+Lycée Français de New York;10020;40.768825;-73.951379
+Harlem Rehab;10019;40.807747;-73.939310
+Harlem Rehab;10018;40.807747;-73.939310
+Harlem Rehab;10017;40.807747;-73.939310
+Harlem Rehab;10016;40.807747;-73.939310
+Harlem Rehab;10015;40.807747;-73.939310
+Harlem Rehab;10014;40.807747;-73.939310
+Harlem Rehab;10013;40.807747;-73.939310
+Harlem Rehab;10012;40.807747;-73.939310
+Harlem Rehab;10011;40.807747;-73.939310
