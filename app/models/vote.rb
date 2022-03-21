@@ -1,5 +1,4 @@
 class Vote < ApplicationRecord
-  def self.search(search)
-    where("name LIKE ?", "%#{search}%")
-  end
+#  geocoded_by :address
+ # after_validation :geocode, if: :will_save_change_to_address?
 end

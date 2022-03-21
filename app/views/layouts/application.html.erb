@@ -11,14 +11,26 @@
   <div class="background"></div>
   <body>
   <%=render 'votes/navbar' %>
-  <div class="result">
-    <p>C'est bien beau tout ça mais je vote où ?</p>
-    <div class="center-search">
-        <%= form_tag votes_path, method: :get do %>
-          <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "C'est quoi mon zipcode ?" %>
-        <% end %>
+  <div class="container">
+    <div class="result">
+      <div><h1>C'est bien beau tout ça mais je vote où ?</h1></div>
+        <div class="center-search">
+          <%= form_tag votes_path, method: :get do %>
+            <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "C'est quoi mon zipcode ?" %>
+          <% end %>
+      </div>
+      <%= yield %>
     </div>
-    <%= yield %>
+    <%
+=begin
+%>
+    <div class="result-2">
+    <div><h1>comment j'y vais ?</h1></div>
+    <div class= "style" style="width: 100%; height: 600px;" data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>" data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
+  </div>
+<%
+=end
+%>
   </body>
 </html>

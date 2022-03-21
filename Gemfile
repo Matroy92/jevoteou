@@ -43,3 +43,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'geocoder'
+
+gem 'pg'
+
+gem 'simple_form', github: 'heartcombo/simple_form'

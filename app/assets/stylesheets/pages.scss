@@ -1,7 +1,14 @@
 body {
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  background-image: url("elysee.jpeg");
-  background-size: cover;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #F4F4F9;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 600;
 }
 
 h3 {
@@ -13,95 +20,35 @@ h3 {
   margin-top: -20px;
 }
 
-p {
-  text-align: center;
-  color: black;
-  font-size: 40px;
-  margin: auto;
-  padding: 20px;
-  font-weight: 600;
-}
-
 h6 {
   text-align: center;
   color: black;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
-@use postcss-color-function;
-@use postcss-nested;
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+.result-container {
+  padding: 0px 10px;
+  margin: 30px 0px;
+  background: #F4F4F9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
 
-.center-search {
-  justify-content: center;
+.container-2 {
   display: flex;
-  padding-right: 140px;
-}
-
-.search {
-    &__input {
-        margin-top: 20px;
-        width: 100%;
-        padding: 12px 67px;
-        font-size: 16px;
-        background-color: transparent;
-        transition: transform 250ms ease-in-out;
-        line-height: 18px;
-        color: #575756;
-        background-color: transparent;
-/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
-
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-size: 18px 18px;
-        background-position: 95% center;
-        border-radius: 50px;
-        border: 2px solid #575756;
-        transition: all 400ms ease-in-out;
-        backface-visibility: hidden;
-        transform-style: preserve-3d;
-
-        &::placeholder {
-            color:#575756;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-
-        &:hover,
-        &:focus {
-            outline: 0;
-            border: 1px solid transparent;
-            border-bottom: 1px solid #575756;
-            border-radius: 0;
-            background-position: 100% center;
-        }
-    }
-}
-
-.navbar {
-  margin: -8px;
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  height: 100px;
-  background: linear-gradient(45deg, #002291,#FFFFFF,#ED2938);
+  justify-content: center;
 }
 
-.avatar-nav {
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #EBF4FA;
-  margin: 10px;
+
+.test {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.result {
-  height: 520px;
-  padding: 10px;
-  margin: 50px 80px;
-  background: #FFFFFF;
-  border-radius: 30px;
-  box-shadow: rgba(3, 102, 214, 30%) 0px 0px 0px 3px;
-  opacity: 90%;
-}

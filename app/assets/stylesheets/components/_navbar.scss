@@ -1,0 +1,15 @@
+.navbar {
+  margin: -8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #33658A;
+}
+
+.avatar-nav {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #EBF4FA;
+  margin: 10px;
+}

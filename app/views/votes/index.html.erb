@@ -1,5 +1,6 @@
-    <div class="col-sm-8">
+    <div class = "container-2">
         <% if params[:query].present? %>
+        <div class = "result-container" >
           <% if @votes.present? %>
             <% @votes.each do |vote| %>
           <h6>Quelle chance, tu dois aller voter ici :</h6>
@@ -8,5 +9,6 @@
               <% else %>
                 <h6> Oups ! Ton zipcode ne correspond à aucun lieu de vote... Es-tu sûr de toi ? </h6>
           <% end %>
+          </div>
         <% end %>
     </div>

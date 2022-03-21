@@ -3,7 +3,7 @@ class VotesController < ApplicationController
     if params[:query].present?
       @votes = Vote.where(zipcode: params[:query])
     else
-      @votes = Vote.where(zipcode: params[:query])
+      @votes = Vote.all
     end
   end
 end

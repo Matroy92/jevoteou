@@ -10,11 +10,11 @@ puts "Cleaning database..."
 Vote.destroy_all
 
 puts "Creating addresses..."
-home = { address: "2022 Madison Avenue, 10035, New York, NY, USA", zipcode: "10030" || "10000" || "10015"}
-lycée_français = { address: "Lycée Français,1st 75th E street, 10035, New York, NY, USA", zipcode: "10027"}
+home = { address: "2022 Madison Avenue, 10035, New York, NY, USA", zipcode: "10030"}
+lycee_français = { address: "Lycée Français,1st 75th E street, 10035, New York, NY, USA", zipcode: "10027"}
 hospital = { address: "12th wall street , 10035, New York, NY, USA", zipcode: "10024"}
 
-[ home, lycée_français, hospital ].each do |attributes|
+[home, lycee_français, hospital].each do |attributes|
   vote = Vote.create!(attributes)
   puts "Created #{vote.address}"
 end
