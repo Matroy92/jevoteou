@@ -6,16 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'csv'
+
 puts "Cleaning database..."
 Vote.destroy_all
 
 puts "Creating addresses..."
-home = { address: "2022 Madison Avenue, 10035, New York, NY, USA", zipcode: "10030"}
-lycee_français = { address: "Lycée Français,1st 75th E street, 10035, New York, NY, USA", zipcode: "10027"}
-hospital = { address: "12th wall street , 10035, New York, NY, USA", zipcode: "10024"}
+csv_options = { col_sep: ';', headers: :first_row, header_converters: :symbol }
+filepath    = 'app/assets/seed/votes.csv'
 
-[home, lycee_français, hospital].each do |attributes|
-  vote = Vote.create!(attributes)
-  puts "Created #{vote.address}"
+CSV.foreach(filepath, csv_options) do |row|
+    next if row[:address].blank?
+    Vote.create!(address: row[:address], zipcode: row[:zipcode])
 end
+
 puts "Finished!"
