@@ -7,7 +7,7 @@ h1 {
   text-align: center;
   color: black;
   font-size: 40px;
-  padding: 10px;
+  padding: 5px;
   font-weight: 600;
 }
 
@@ -28,13 +28,13 @@ h6 {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
 .result-container {
   padding: 2px 10px;
-  margin: 30px 0px;
+  margin: 20px 0px;
   background: #F4F4F9;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -47,4 +47,37 @@ h6 {
 
 .test {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.result {
+  min-height: 400px;
+  margin-top: 50px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  opacity: 95%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .result {
+    min-height: 400px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    opacity: 95%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .result-container {
+    padding: 2px 2px;
+    margin: 30px 0px;
+    background: #F4F4F9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 5px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
 }
