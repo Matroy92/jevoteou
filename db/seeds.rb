@@ -17,7 +17,7 @@ filepath    = 'app/assets/seed/votes.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
     next if row[:address].blank?
-    Vote.create!(address: row[:address], zipcode: row[:zipcode], latitude: row[:latitude], longitude: row[:longitude])
+    Vote.create!( address: row[:address], zipcode: row[:zipcode], latitude: row[:latitude], longitude: row[:longitude], title: row[:title])
 end
 
 puts "Finished!"

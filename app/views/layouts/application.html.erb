@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jevoteou?</title>
+    <title>MonBureauDeVote</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,10 +13,10 @@
   <%=render 'votes/navbar' %>
   <div class="container">
     <div class="result">
-      <div><h1>C'est bien beau tout ça mais je vote où ?</h1></div>
+      <div><h1>Quel est mon Bureau de vote?</h1></div>
         <div class="center-search">
           <%= form_tag votes_path, method: :get do %>
-            <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "C'est quoi mon zipcode ?" %>
+            <%= text_field_tag :query, params[:query], class: "search__input", placeholder: "Entrez votre Zip Code" %>
           <% end %>
       </div>
       <%= yield %>
