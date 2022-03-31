@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2022_03_30_095435) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "votes", force: :cascade do |t|
     t.string "address"
     t.integer "zipcode"

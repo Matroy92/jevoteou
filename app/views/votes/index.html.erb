@@ -12,7 +12,7 @@
       <div class= "style" style=" height: 600px;" data-controller="mapbox" data-mapbox-markers-value="<%= @markers.to_json %>" data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
       <% else %>
-        <h6>Votre zip code ne correspond a aucun lieu de vote, êtes vous sûr de voter dans l’Etat de NY, NJ, CT ou aux Bermudes.</h6>
+        <h5>Votre zip code ne correspond a aucun lieu de vote, êtes vous sûr de voter dans l’Etat de NY, NJ, CT ou aux Bermudes.</h5>
       <% end %>
   <% end %>
 </div>
